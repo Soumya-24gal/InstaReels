@@ -40,7 +40,7 @@ export default function Signup() {
       <CardContent>
         <Typography  >
           <div className="stext">
-         By Signing up , you are ready to get fucked
+         By Signing up , you accept terms and conditions
           </div>
           
         </Typography>

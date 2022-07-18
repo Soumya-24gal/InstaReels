@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import { AuthProvider } from './context/Authcontext';
+import PrivateRoute from './components/PrivateRoute';
 function App() {
   return (
     <>
@@ -18,8 +19,20 @@ function App() {
      
     <Route path='/login' element={<Login/>}></Route>
     <Route path='/signup' element={<Signup/>}></Route>
-    <Route path='/' element={<Feed/>}></Route>
-    
+    <Route
+          path="/"
+          element={
+            <PrivateRoute>
+              <Feed />
+            </PrivateRoute>
+          }
+        />
+
+
+
+
+    {/* <PrivateRoute path="/" element={<Feed/>} /> */}
+  
     </Routes>
     </AuthProvider>
     </BrowserRouter>

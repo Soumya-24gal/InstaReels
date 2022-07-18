@@ -23,3 +23,12 @@
     border: 2px;
     border-color: crimson;
 }
+
+@media only screen and(max-width:620px) {
+    .signClass {
+        width: 60%;
+    }
+    .instaLogo img {
+        width: 35px;
+    }
+}
